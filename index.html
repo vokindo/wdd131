@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Victor Okoth Okindo</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Victor Okoth Okindo. Introduction to web development concepts including CSS, HTML, and JavaScript.">
+    <meta name="author" content="Victor Okoth Okindo">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
-
 <body>
-    <h1>WDD 131 - Victor Okindo</h1>
+    <header>
+        <h1>Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Favorite Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Card 1</h2>
+            <img src="images/example1.webp" alt="Example 1">
+            <p>This is the content for card 1. Placeholder text goes here.</p>
+        </section>
+        <section class="card">
+            <h2>Card 2</h2>
+            <img src="images/example2.jpg" alt="Example 2">
+            <p>This is the content for card 2. Placeholder text goes here.</p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Victor Okoth Okindo, Kenya
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
-
 </html>
