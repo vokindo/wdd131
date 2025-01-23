@@ -1,0 +1,73 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid; /* Apply CSS Grid */
+    grid-template-rows: auto 1fr auto; /* Header, Main (1fr = flexible), Footer */
+    grid-template-columns: 1fr; /* Single-column layout */
+    min-height: 100vh; /* Ensure full viewport height */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Section */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Navigation Menu with Flexbox */
+nav ul {
+    display: flex; /* Apply Flexbox */
+    justify-content: center; /* Center the navigation items */
+    list-style: none;
+    margin-top: 1em;
+    gap: 1.5em; /* Space between items */
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Gold on hover */
+}
+
+/* Main Content Area */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two-thirds for main, one-third for sidebar */
+    gap: 20px;
+    padding: 20px;
+}
+
+main section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main aside {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
