@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kenya - Country Overview</title>
+    <meta name="description" content="A brief overview of Kenya, including geography, population, and weather.">
+    <meta name="author" content="Victor Okindo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Kenya</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/hero-l.webp" media="(min-width: 1000px)">
+                    <source srcset="images/hero-m.webp" media="(min-width: 500px)">
+                    <img src="images/hero-s.webp" alt="Elephant in Kenya" loading="lazy">
+                </picture>
+            </div>
+            
+            <div class="top-left">
+                <h2>Data</h2>
+                <p><strong>Area: </strong>582,646 km²</p>
+                <p><strong>Population: </strong>55.1 million</p>
+                <p><strong>Capital: </strong> Nairobi</p>
+                <p><strong>Languages: </strong>English, Swahili</p>
+                <p><strong>Time Zone: </strong>UTC +3</p>
+                <p><strong>Calling Code: </strong>+254</p>
+                <p><strong>Internet TLD: </strong>.ke</p>
+            </div>
+
+            <div class="bottom-right">
+                <h2 class="weather">Weather <span class="weather-icon">⛅</span></h2>
+                <img src="images/weather-icon.svg" alt="Weather Icon">
+                <p><strong>Temperature: </strong><span id="temperature">19</span>°C</p>
+                <p><strong>Conditions: </strong>Rainy</p>
+                <p><strong>Wind Speed: </strong><span id="windSpeed">0</span> km/h</p>
+                <p><strong>Wind Chill: </strong><span id="windChill">N/A</span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Victor Okindo, Kenya</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

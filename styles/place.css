@@ -1,0 +1,85 @@
+/* Define global CSS variables in :root */
+:root {
+    --primary-color: #000000; /* Black */
+    --secondary-color: #006400; /* Green */
+    --accent-color: #ff0000; /* Red */
+    --text-color: #FFFFFF; /* White */
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.top-left, .bottom-right {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 20px;
+    border: solid 1px #ddd;
+    text-align: center;
+    opacity: 1;
+}
+
+.top-left {
+    top: 50px;
+    left: 50px;
+}
+
+.bottom-right {
+    bottom: 50px;
+    right: 50px;
+}
+
+.bottom-right img {
+    width: 55px;
+}
+
+.weather-icon::after {
+    content: ' ⛅'; /* Weather icon pseudo-element */
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+@media screen and (max-width: 500px) {
+    .top-left, .bottom-right {
+        position: static;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
