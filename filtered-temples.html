@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>W04 Assignment: Picture Album Enhancement</title>
+  <meta name="description" content="W04 Assignment: Picture Album Enhancement.">
+  <meta name="author" content="Victor Okindo">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="temple-text">Temple Album</a>
+      <a href="#" id="smallFilter">Small</a>
+      <a href="#" id="largeFilter">Large</a>
+      <a href="#" id="newFilter">New</a>
+      <a href="#" id="oldFilter">Old</a>
+      <a href="#" id="homeFilter">Home</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <h1 class="center">Temple Album</h1>
+  <main>
+    <!-- Container for dynamically generated temple cards -->
+    <div id="templeContainer" class="temple-container"></div>
+  </main>
+  <footer>
+    <span id="currentyear"></span><br>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
