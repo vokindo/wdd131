@@ -3,41 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Victor Okoth Okindo</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Victor Okoth Okindo. Introduction to web development concepts including CSS, HTML, and JavaScript.">
+    <title>WDD 131 - ByteBites Project - Victor Okoth Okindo</title>
+    <meta name="description" content="ByteBites - AI & Tech Explained Simply.">
     <meta name="author" content="Victor Okoth Okindo">
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/getdates.js" defer></script>  
 </head>
+
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Dynamic Web Fundamentals</h1>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="ByteBites Logo">
+            </a>
+        </div>
         <nav>
             <ul>
-                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Favorite Scripture</a></li>
-                <li><a href="#">Final Project</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <button id="dark-mode-toggle">🌙</button>
     </header>
-    <main>
-        <section class="card">
-            <h2>Card 1</h2>
-            <img src="images/example1.webp" alt="Example 1">
-            <p>This is the content for card 1. Placeholder text goes here.</p>
-        </section>
-        <section class="card">
-            <h2>Card 2</h2>
-            <img src="images/example2.jpg" alt="Example 2">
-            <p>This is the content for card 2. Placeholder text goes here.</p>
-        </section>
-    </main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>AI & Tech, Simplified.</h1>
+        <p>Breaking down AI, blockchain, and future technology into easy-to-understand content.</p>
+        <a href="blog.html" class="btn">Explore Blog</a>
+    </section>
+
+    <!-- Latest Articles Section -->
+    <section class="latest-posts">
+        <h2>Latest Articles</h2>
+        <article>
+            <img src="images/ai-trends.jpg" alt="AI Trends 2025">
+            <h3>AI in 2025: The Invisible Assistant</h3>
+            <p>Discover how AI is seamlessly integrating into our daily lives.</p>
+            <a href="blog.html">Read More</a>
+        </article>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>
-            &copy; <span id="currentyear"></span> Victor Okoth Okindo, Kenya
-        </p>
-        <p id="lastModified"></p>
+        <p>&copy; 2025 ByteBites. All rights reserved.</p>
     </footer>
 </body>
 </html>
