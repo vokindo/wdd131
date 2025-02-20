@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Reviews</title>
+    <meta name="description" content="View user-submitted product reviews on ByteBites.">
+    <meta name="author" content="Victor Okoth Okindo">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/count-reviews.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="ByteBites Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="form.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="review-container">
+        <h1>Product Reviews</h1>
+        <p>Total Reviews Submitted: <span id="reviewCount">0</span></p>
+
+        <div id="reviewList">
+            <p>No reviews submitted yet.</p>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p id="currentyear"></p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
